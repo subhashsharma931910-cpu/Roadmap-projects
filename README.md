@@ -9,3 +9,4 @@ You can find the projects and their details in this repository: [Roadmap Project
 ### Frontend Projects
 - [Basic HTML Website](./Frontend-projects/basic-html-website) https://roadmap.sh/projects/basic-html-website
 - [Single Page CV](./Frontend-projects/basic-html-website)
+- [personal-Portfolio](./Frontend-projects/personal-portfolio) https://roadmap.sh/projects/portfolio-website

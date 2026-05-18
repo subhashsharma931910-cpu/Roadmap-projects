@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@100;400;500;600;700;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+  min-width: 100%;
+}
+
+header {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  display: flex;
+}
+
+.logo h2 {
+  margin-right: 25%;
+}
+
+.nav_bar {
+  display: flex;
+  min-width: 500px;
+  justify-content: space-between;
+}
+
+.nav_bar a {
+  font-size: 14px;
+  color: black;
+  letter-spacing: 3px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 25px 10px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+
+.title h1 {
+  font-family: "Indie Flower", cursive;
+  font-size: 50px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.title p {
+  font-size: 18px;
+  color: #666;
+}
+
+/* section */
+
+.flex-wrapper {
+  display: flex;
+  align-items: stretch;
+  border: 2px solid #333;
+  margin: 0 80px 40px;
+}
+
+.flex-wrapper section {
+  padding: 24px 20px;
+  border-right: 2px solid #333;
+  flex: 1;
+}
+
+.flex-wrapper section:nth-child(1) {
+
+  padding: 24px 1px;
+}
+
+.flex-wrapper section:last-child {
+  border-right: none;
+}
+
+.flex-wrapper h2 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+/* Projects */
+.projects ul {
+  list-style: none;
+  padding: 0;
+  display: block;
+}
+
+.projects ul li {
+  padding: 20px 2px;
+  border-bottom: 2px solid #000000;
+  font-size: 15px;
+}
+
+.projects ul li:last-child {
+  border-bottom: none;
+}
+
+/* Work Experience */
+.work-experience article {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.work-experience article:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.work-experience h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.work-experience p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.work-experience a {
+  font-size: 14px;
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+/* Education */
+.education p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 14px;
+}
+
+.education ul {
+  list-style: none;
+  padding: 0;
+}
+
+.education ul li {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.8;
+}
+
+.education ul li::before {
+  content: '- ';
+}
+
+
+.feedback-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 80px 40px;
+}
+
+blockquote {
+  font-size: 18px;
+  width: 25%;
+  height: 200px;
+  font-style: italic;
+  color: #000000;
+  border: 2px solid #333;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+blockquote footer:nth-child(2) {
+  padding: 20px 0;
+  color: #333;
+}
+
+.reviews h2 {
+  position: relative;
+  left: 100px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 4rem;
+  border-top: 1px solid #ccc;
+}
+
+/* Tablet - 768px */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 16px 20px;
+    gap: 12px;
+  }
+
+  .logo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav_bar {
+    min-width: unset;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .nav_bar a {
+    padding: 8px 6px;
+    letter-spacing: 1px;
+  }
+
+  .title {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .title h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .title p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .flex-wrapper {
+    flex-direction: column;
+    margin: 0 20px 40px;
+  }
+
+  .flex-wrapper section {
+    border-right: none;
+    border-bottom: 2px solid #333;
+  }
+
+  .flex-wrapper section:last-child {
+    border-bottom: none;
+  }
+
+  .feedback-wrapper {
+    margin: 0 20px 40px;
+  }
+
+  blockquote {
+    width: 100%;
+    margin: 10px 0;
+    height: auto;
+  }
+
+  .reviews h2 {
+    left: 20px;
+  }
+}
+
+/* Mobile - 480px */
+@media (max-width: 480px) {
+  header {
+    padding: 12px 16px;
+  }
+
+  .title h1 {
+    font-size: 28px;
+  }
+
+  .flex-wrapper {
+    margin: 0 10px 30px;
+  }
+
+  .nav_bar a {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+
+  blockquote {
+    font-size: 15px;
+  }
+}
